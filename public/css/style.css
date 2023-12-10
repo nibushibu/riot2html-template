@@ -16,8 +16,13 @@
   padding: 0;
   display: flex;
   gap: var(--size-4);
+  align-items: baseline;
 
   > * {
     padding: 0;
   }
+}
+
+.c-nav-list__link[aria-current='page'] {
+  text-decoration: underline;
 }
