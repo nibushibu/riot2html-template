@@ -1,0 +1,29 @@
+<static-header>
+  <nav>
+    <ul class="c-nav-list">
+      <li each="{ item in nav }">
+        <a href="{item.link}" aria-current="{props.current === item.name ? 'page' : null}">{item.name}</a>
+      </li>
+    </ul>
+  </nav>
+  <script>
+    export default function StaticHeader(){
+      return {
+        nav: [
+          {
+            name: 'Home',
+            link: '/'
+          },
+          {
+            name: 'About',
+            link: '/about.html'
+          },
+          {
+            name: 'Child',
+            link: '/child/index.html'
+          }
+        ],
+      }
+    }
+  </script>
+</static-header>

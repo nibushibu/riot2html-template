@@ -1,0 +1,26 @@
+<html>
+<template is="html-base" title="{ state.title }" meta="{ state.meta }" to-root="../">
+  <static-header current="Home"></static-header>
+  <p>I'm just a kid.</p>
+</template>
+<script>
+  import HtmlBase from '../../components/html-base.riot'
+  import StaticHeader from '../../components/static-header.riot'
+  export default {
+    components: {
+      HtmlBase,
+      StaticHeader,
+    },
+    state: {
+      title: 'Child page',
+      meta: [
+        {
+          name: 'description',
+          content: 'this is a child page.',
+        },
+      ],
+    },
+  }
+</script>
+
+</html>

@@ -1,0 +1,8 @@
+{
+  "emmet.includeLanguages": {
+    "riot": "html"
+  },
+  "files.associations": {
+    "*.riot": "html"
+  }
+}
